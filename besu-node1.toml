@@ -33,7 +33,6 @@ miner-coinbase="0x0000000000000000000000000000000000000000"
 
 # Logging
 logging="INFO"
-log-color-enabled=false
 
 # Metrics
 metrics-enabled=true
@@ -49,4 +48,3 @@ bootnodes=["enode://YOUR_BOOTNODE_ENODE_HERE@127.0.0.1:30303"]
 
 # Gas Configuration
 target-gas-limit=8000000
-gas-price=0

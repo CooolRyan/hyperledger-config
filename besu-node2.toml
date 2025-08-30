@@ -1,24 +1,23 @@
 # Besu Node 2 Configuration
-# Network Configuration
 network-id=1337
-sync-mode=FAST
+sync-mode="FAST"
 
 # RPC Configuration
 rpc-http-enabled=true
-rpc-http-host=0.0.0.0
+rpc-http-host="127.0.0.1"
 rpc-http-port=8555
 rpc-http-cors-origins=["*"]
 rpc-http-apis=["ETH","NET","WEB3","DEBUG","ADMIN","MINER","CLIQUE"]
 
 # WS Configuration
 rpc-ws-enabled=true
-rpc-ws-host=0.0.0.0
+rpc-ws-host="127.0.0.1"
 rpc-ws-port=8556
 rpc-ws-apis=["ETH","NET","WEB3","DEBUG","ADMIN","MINER","CLIQUE"]
 
 # P2P Configuration
 p2p-enabled=true
-p2p-host=0.0.0.0
+p2p-host="127.0.0.1"
 p2p-port=30304
 p2p-peer-upper-bound=25
 
@@ -33,12 +32,11 @@ miner-enabled=false
 miner-coinbase="0x0000000000000000000000000000000000000000"
 
 # Logging
-logging=INFO
-log-color-enabled=false
+logging="INFO"
 
 # Metrics
 metrics-enabled=true
-metrics-host=0.0.0.0
+metrics-host="127.0.0.1"
 metrics-port=9555
 
 # Privacy
@@ -50,4 +48,3 @@ bootnodes=["enode://YOUR_BOOTNODE_ENODE_HERE@127.0.0.1:30303"]
 
 # Gas Configuration
 target-gas-limit=8000000
-gas-price=0
