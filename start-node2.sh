@@ -1,0 +1,41 @@
+#!/bin/bash
+
+echo "Starting Besu Node 2..."
+echo
+
+# Check if Java 17+ is installed
+if ! command -v java &> /dev/null; then
+    echo "Error: Java is not installed"
+    echo "Please install OpenJDK 17 or later first"
+    exit 1
+fi
+
+JAVA_VERSION=$(java -version 2>&1 | head -n 1 | cut -d'"' -f2 | cut -d'.' -f1)
+if [ "$JAVA_VERSION" -lt 17 ]; then
+    echo "Error: Java 17 or later is required (current: $JAVA_VERSION)"
+    echo "Please install OpenJDK 17 or later"
+    exit 1
+fi
+
+# Check if Besu is installed
+if ! command -v besu &> /dev/null; then
+    echo "Error: Besu is not installed or not in PATH"
+    echo "Please install Hyperledger Besu first"
+    echo "Download from: https://besu.hyperledger.org/en/stable/HowTo/Get-Started/Install-Binaries/"
+    exit 1
+fi
+
+# Create data directory if it doesn't exist
+mkdir -p data/node2
+
+# Start Node 2
+echo "Starting Node 2 on port 8555..."
+echo "RPC HTTP: http://localhost:8555"
+echo "RPC WS: ws://localhost:8556"
+echo "P2P: 30304"
+echo "Metrics: http://localhost:9555"
+echo
+echo "Press Ctrl+C to stop the node"
+echo
+
+besu --config-file=besu-node2.toml
