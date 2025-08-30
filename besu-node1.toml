@@ -44,7 +44,6 @@ privacy-enabled=false
 
 # Network Discovery
 discovery-enabled=true
-bootnodes=["enode://YOUR_BOOTNODE_ENODE_HERE@127.0.0.1:30303"]
 
 # Gas Configuration
 target-gas-limit=8000000
