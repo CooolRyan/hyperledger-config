@@ -15,6 +15,10 @@
     "shanghaiTime": 0,
     "cancunTime": 0,
     "pragueTime": 0,
+    "prague": {
+        "pragueBlock": 0,
+        "withdrawalRequestContractAddress": "0x0000000000000000000000000000000000000000"
+    },
     "clique": {
       "blockperiodseconds": 15,
       "epochlength": 30000
@@ -31,8 +35,5 @@
     "0x0000000000000000000000000000000000000000": {
       "balance": "0x0"
     }
-  },
-  "number": "0x0",
-  "gasUsed": "0x0",
-  "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  }
 }
