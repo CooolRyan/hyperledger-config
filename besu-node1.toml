@@ -1,4 +1,4 @@
-# Besu Node 1 Configuration (Latest Version)
+# Besu Node 1 Configuration (Latest Version Compatible)
 network-id=1337
 sync-mode="FAST"
 
@@ -15,10 +15,9 @@ rpc-ws-host="0.0.0.0"
 rpc-ws-port=8546
 rpc-ws-apis=["ETH","NET","WEB3","DEBUG","ADMIN","MINER","CLIQUE"]
 
-# P2P Configuration (P2P is enabled by default in latest version)
+# P2P Configuration
 p2p-host="0.0.0.0"
 p2p-port=30303
-p2p-peer-upper-bound=25
 
 # Data Directory
 data-path="./data/node1"
@@ -28,7 +27,6 @@ genesis-file="./genesis.json"
 
 # Mining Configuration
 miner-enabled=false
-miner-coinbase="0x0000000000000000000000000000000000000000"
 
 # Logging
 logging="INFO"
@@ -37,12 +35,6 @@ logging="INFO"
 metrics-enabled=true
 metrics-host="0.0.0.0"
 metrics-port=9545
-
-# Privacy
-privacy-enabled=false
-
-# Network Discovery
-discovery-enabled=true
 
 # Gas Configuration
 target-gas-limit=8000000
