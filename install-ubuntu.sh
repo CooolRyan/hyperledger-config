@@ -40,7 +40,7 @@ echo "JAVA_HOME: $JAVA_HOME"
 
 # Download and install Besu
 echo "Downloading Hyperledger Besu..."
-BESU_VERSION="23.10.1"
+BESU_VERSION="25.8"
 BESU_URL="https://hyperledger.jfrog.io/artifactory/besu-binaries/besu/${BESU_VERSION}/besu-${BESU_VERSION}.tar.gz"
 BESU_DIR="$HOME/besu"
 
